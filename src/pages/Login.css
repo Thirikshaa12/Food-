@@ -1,0 +1,57 @@
+.login-container {
+  background-image: url('/uploads/background.jpg'); /* Image from public/uploads */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card for the form */
+.form-card {
+  background-color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-card h2 {
+  color: darkred;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-card button {
+  background-color: darkred;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-card p {
+  margin-top: 10px;
+  text-align: center;
+}

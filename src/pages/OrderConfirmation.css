@@ -1,0 +1,65 @@
+.confirmation-container {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.checkmark-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #4BB543;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  animation: pop 0.5s ease-in-out;
+}
+
+.checkmark {
+  font-size: 60px;
+  color: white;
+  animation: scaleUp 0.5s ease-in-out;
+}
+
+.order-summary {
+  margin: 30px auto;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.order-summary p {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff4747;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e53e3e;
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}

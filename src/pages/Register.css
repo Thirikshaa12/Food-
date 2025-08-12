@@ -1,0 +1,59 @@
+/* Apply to entire body */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Full screen background */
+.register-background {
+  background-image: url('/uploads/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Card */
+.register-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.register-card h2 {
+  color: darkred;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.register-card button {
+  width: 100%;
+  padding: 10px;
+  background: darkred;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.register-card p {
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,120 @@
+.menu-container {
+  background: #111;
+  color: #fff;
+  padding: 40px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.menu-categories {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-categories button {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.menu-categories .active,
+.menu-categories button:hover {
+  background: #fff;
+  color: #111;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.menu-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* CATEGORY BASED SHADOWS */
+.menu-card.pizza {
+  box-shadow:
+    0 0 10px rgba(255, 165, 0, 0.3),
+    0 0 25px rgba(255, 140, 0, 0.4),
+    0 0 35px rgba(255, 69, 0, 0.4);
+}
+.menu-card.pizza:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 20px rgba(255, 165, 0, 0.4),
+    0 0 40px rgba(255, 140, 0, 0.5),
+    0 0 60px rgba(255, 69, 0, 0.5);
+}
+
+.menu-card.sides {
+  box-shadow:
+    0 0 10px rgba(0, 255, 0, 0.2),
+    0 0 25px rgba(50, 205, 50, 0.35),
+    0 0 35px rgba(34, 139, 34, 0.35);
+}
+.menu-card.sides:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 20px rgba(0, 255, 0, 0.3),
+    0 0 40px rgba(50, 205, 50, 0.45),
+    0 0 60px rgba(34, 139, 34, 0.45);
+}
+
+.menu-card.drinks {
+  box-shadow:
+    0 0 10px rgba(0, 191, 255, 0.25),
+    0 0 25px rgba(30, 144, 255, 0.35),
+    0 0 35px rgba(0, 0, 255, 0.35);
+}
+.menu-card.drinks:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 20px rgba(0, 191, 255, 0.4),
+    0 0 40px rgba(30, 144, 255, 0.5),
+    0 0 60px rgba(0, 0, 255, 0.5);
+}
+
+.menu-card-content {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.view-more {
+  display: inline-block;
+  margin-top: 10px;
+  background: #fff;
+  color: #111;
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.view-more:hover {
+  background: #ff9900;
+  color: #fff;
+}
