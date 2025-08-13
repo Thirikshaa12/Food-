@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import  Register  from './pages/Register';
 import Login  from './pages/Login';
 import Home from './pages/Home';
-import { Menu } from './pages/menu';
+import { Menu } from './pages/Menu';
 import {ProductDetail} from './pages/ProductDetail';
 import OrderNow  from './pages/OrderNow';
 import OrderConfirmation from './pages/OrderConfirmation';
